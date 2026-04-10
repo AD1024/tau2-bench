@@ -202,7 +202,7 @@ class FlightInfo(BaseModel):
 
 class User(BaseModel):
     user_id: str = Field(description="Unique identifier for the user")
-    name: Name = Field(description="User's full name")
+    full_name: Name = Field(description="User's full name")
     address: Address = Field(description="User's address information")
     email: str = Field(description="User's email address")
     dob: str = Field(
